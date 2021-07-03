@@ -1,0 +1,25 @@
+# Escribir un programa que guarde en un diccionario las frutas de la tabla, pregunte al usuario por una fruta,
+# si la fruta es la misma que la registrada asignar un precio y almacenarlo en el diccionario, mostrar el resultado.
+
+# Fruta	Precio
+# Plátano	1.35
+# Manzana	0.80
+# Pera	0.85
+# Naranja	0.70
+
+
+def frutasPrecio():
+    Fruta={'Plátano':'','Manzana':'','Pera':'','Naranja':''}
+
+    for i in Fruta:
+        print (i)
+        print("Introduzca una fruta")
+        fruta=input()
+        if fruta==i:
+           print("Por favor introduce un precio a la fruta seleccionada")
+           precio=input()
+           Fruta[fruta]=precio
+           print(Fruta)
+
+    
+frutasPrecio()
