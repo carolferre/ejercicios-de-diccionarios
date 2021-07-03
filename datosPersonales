@@ -1,0 +1,37 @@
+
+#Escribir un programa que cree un diccionario vacío y lo vaya llenado con información sobre una persona (por ejemplo nombre,apellidos, email,dirección, teléfono, correo electrónico, etc.) que se le pida al usuario. 
+# Cada vez que se añada un nuevo dato debe imprimirse el contenido del diccionario.
+
+def datosUsuario():
+    basedeDatos={'Nombre':'','Apellidos':'','email':'','dirección':'','teléfono':''}
+
+    print("Introduce nombre")
+    nombre=input()
+    basedeDatos['Nombre']=nombre
+    print("Los datos con la nueva actualización= ",basedeDatos)
+
+    print("Introduce apellido")
+    apellido=input()
+    basedeDatos['Apellidos']=apellido
+    print("Los datos con la nueva actualización= ", basedeDatos)
+
+    print("Introduce email")
+    email=input()
+    basedeDatos['email']=email
+    print("Los datos con la nueva actualización= ", basedeDatos)
+
+    print("Introduce dirección")
+    direccion=input()
+    basedeDatos['dirección']=direccion
+    print("Los datos con la nueva actualización= ", basedeDatos)
+
+    print("Introduce telefono")
+    telefono=input()
+    basedeDatos['teléfono']=telefono
+    print("Los datos con la nueva actualización= ", basedeDatos)
+    
+    print("*******************************************************")
+    print("El resultado total de la base de datos es= ",end='')
+    print(basedeDatos)
+
+datosUsuario()
